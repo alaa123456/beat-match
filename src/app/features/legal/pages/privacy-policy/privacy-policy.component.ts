@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         <p class="eyebrow">Privacy Policy</p>
         <h1>Privacy Policy</h1>
         <p>
-          Beatmatch is building a platform for music-driven connection. We collect only the information
+          Lineup is building a platform for music-driven connection. We collect only the information
           necessary to manage the waitlist, improve the product experience and communicate updates.
         </p>
         <p>

@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         <p class="eyebrow">Terms & Conditions</p>
         <h1>Terms & Conditions</h1>
         <p>
-          By accessing Beatmatch, you agree to use the platform responsibly and in line with community
+          By accessing Lineup, you agree to use the platform responsibly and in line with community
           values rooted in respect, safety and authentic human connection.
         </p>
         <p>
@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
           and launch timing may evolve before public release.
         </p>
         <p>
-          Users must respect the rights, privacy and safety of others. Beatmatch may update these terms
+          Users must respect the rights, privacy and safety of others. Lineup may update these terms
           as the product evolves, and continued use of the service indicates acceptance of changes.
         </p>
       </div>

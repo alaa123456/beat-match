@@ -11,12 +11,12 @@ import { Component, signal } from '@angular/core';
 export class FaqComponent {
   readonly faqItems = [
     {
-      question: 'What is Beatmatch?',
+      question: 'What is Lineup?',
       answer:
-        'Beatmatch is a dating experience built for people who share a genuine passion for techno, underground music and late-night culture.',
+        'Lineup is a dating experience built for people who share a genuine passion for techno, underground music and late-night culture.',
     },
     {
-      question: 'Is Beatmatch only for techno lovers?',
+      question: 'Is Lineup only for techno lovers?',
       answer:
         'It is designed for music lovers who feel at home in clubs, festivals and electronic scenes, but the focus remains on cultural connection and shared energy.',
     },
@@ -26,12 +26,12 @@ export class FaqComponent {
         'Yes. Event discovery is a core part of the experience, helping people connect before the night starts and continue after the set ends.',
     },
     {
-      question: 'When will Beatmatch launch?',
+      question: 'When will Lineup launch?',
       answer:
         'The platform is preparing for launch in Paris first. Exact timing will be shared as the early-access community grows.',
     },
     {
-      question: 'Is Beatmatch free?',
+      question: 'Is Lineup free?',
       answer:
         'The early-access waitlist is free to join, and the final product model will be announced closer to launch.',
     },
