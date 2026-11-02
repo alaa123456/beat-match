@@ -1,0 +1,19 @@
+<section class="how-it-works" id="how-it-works">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">The night, decoded</p>
+      <h2>Three signals. Then the rest is yours.</h2>
+    </div>
+
+    <div class="steps-grid">
+      @for (step of steps; track step.number) {
+        <article class="step-card">
+          <div class="step-number">{{ step.number }}</div>
+          <div class="step-visual" aria-hidden="true"></div>
+          <h3>{{ step.title }}</h3>
+          <p>{{ step.description }}</p>
+        </article>
+      }
+    </div>
+  </div>
+</section>

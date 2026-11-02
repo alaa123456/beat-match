@@ -12,6 +12,17 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
+### Exposing the development server with ngrok
+
+The Angular dev server allows ngrok-free tunnel hostnames. Start the app, then point ngrok at its port:
+
+```bash
+ng serve --host 0.0.0.0
+ngrok http 4200
+```
+
+The allowed-host suffix is configured in `angular.json` as `.ngrok-free.app`. If your ngrok account uses a different domain, add that domain suffix to the `serve.options.allowedHosts` list.
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:

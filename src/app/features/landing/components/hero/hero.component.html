@@ -1,0 +1,80 @@
+<section class="hero" id="top">
+  <div class="container hero-shell">
+    <div class="hero-copy">
+      <div class="eyebrow">Field note 001 / Paris after dark</div>
+
+      <h1>
+        MEET YOUR<br />
+        <span class="accent">MATCH</span> ON THE<br />
+        DANCEFLOOR.
+      </h1>
+
+      <p class="lede">
+        Not another dating app. A new way to connect through techno, music and unforgettable nights.
+      </p>
+
+      <div class="actions">
+        <a class="primary-btn" href="#waitlist">Join the waitlist →</a>
+        <a class="secondary-btn" href="#the-experience">Read the night study</a>
+      </div>
+
+      <div class="launch-pill">
+        @for (item of launchInfo; track item) {
+          <span>{{ item }}</span>
+        }
+      </div>
+
+      <div class="hero-tags" aria-label="Brand attributes">
+        @for (tag of heroTags; track tag) {
+          <span>{{ tag }}</span>
+        }
+      </div>
+    </div>
+
+    <figure class="hero-visual">
+      <img
+        class="hero-photo"
+        src="/images/techno-club-crowd.jpg"
+        alt="A DJ seen from behind faces a packed, dimly lit nightclub dance floor."
+        width="960"
+        height="640"
+        fetchpriority="high"
+        decoding="async"
+      />
+      <div class="photo-wash" aria-hidden="true"></div>
+      <div class="photo-grain" aria-hidden="true"></div>
+
+      <div class="scene-heading">
+        <span class="scene-index">TD — 001 / 03:42 AM</span>
+        <span class="concept-label">Concept preview</span>
+      </div>
+
+      <div class="match-card">
+        <div class="match-card-top">
+          <span class="sound-mark" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i>
+          </span>
+          <span>MUSICAL COMPATIBILITY</span>
+        </div>
+
+        <div class="match-score">
+          <strong>92</strong><span>%</span>
+        </div>
+
+        <p class="score-note">Illustrative score · concept only</p>
+
+        <div class="genre-heading">SHARED MUSICAL TASTE</div>
+        <div class="genre-tags" aria-label="Illustrative shared musical taste">
+          <span>Hypnotic techno</span>
+          <span>Industrial</span>
+          <span>Peak time</span>
+        </div>
+      </div>
+
+      <div class="scene-caption">
+        <span>Music first.</span>
+        <strong>Connection follows.</strong>
+      </div>
+    </figure>
+  </div>
+</section>

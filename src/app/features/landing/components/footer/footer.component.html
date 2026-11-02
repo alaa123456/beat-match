@@ -1,0 +1,22 @@
+<footer class="footer">
+  <div class="container footer-shell">
+    <div class="brand-block">
+      <div class="brand">BEATMATCH</div>
+      <p>Same frequency. Different stories.</p>
+    </div>
+
+    <div class="footer-links">
+      @for (link of links; track link.label) {
+        @if (link.external) {
+          <a [href]="link.href" target="_blank" rel="noreferrer noopener">{{ link.label }}</a>
+        } @else {
+          <a [routerLink]="link.href">{{ link.label }}</a>
+        }
+      }
+    </div>
+  </div>
+
+  <div class="container footer-meta">
+    <span>© 2026 Beatmatch. All rights reserved.</span>
+  </div>
+</footer>

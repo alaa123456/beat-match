@@ -1,0 +1,25 @@
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-heading align-left">
+      <p class="eyebrow">FAQ</p>
+      <h2>Everything you need to know.</h2>
+    </div>
+
+    <div class="faq-list">
+      @for (item of faqItems; track item.question; let index = $index) {
+        <article class="faq-item" [class.is-open]="activeIndex() === index">
+          <button type="button" class="faq-trigger" (click)="toggleAccordion(index)" [attr.aria-expanded]="activeIndex() === index">
+            <span>{{ item.question }}</span>
+            <span class="faq-plus">+</span>
+          </button>
+
+          @if (activeIndex() === index) {
+            <div class="faq-answer">
+              <p>{{ item.answer }}</p>
+            </div>
+          }
+        </article>
+      }
+    </div>
+  </div>
+</section>

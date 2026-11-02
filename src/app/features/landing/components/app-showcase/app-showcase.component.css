@@ -1,0 +1,233 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.app-showcase {
+  padding: clamp(4rem, 7vw, 7.5rem) 0;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+  max-width: 720px;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.showcase-note {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.7;
+}
+
+.showcase-shell {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.4rem;
+  align-items: center;
+  min-height: 560px;
+}
+
+.phone-frame {
+  position: relative;
+  justify-self: center;
+  width: min(100%, 350px);
+  height: 560px;
+  padding: 0.85rem;
+  border-radius: 1px;
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-industrial-line);
+  box-shadow: var(--shadow-club-glow);
+}
+
+.phone-one {
+  transform: translateY(1.5rem);
+}
+
+.phone-two {
+  transform: translateY(-1rem);
+}
+
+.phone-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 1.1rem 0.9rem;
+  border-radius: 0;
+  background: linear-gradient(180deg, var(--color-bg), var(--color-bg-soft));
+  border: 1px solid var(--color-border-soft);
+}
+
+.screen-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.mini-tag,
+.chip {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.42rem 0.7rem;
+  border-radius: 0;
+  font-size: 0.56rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.mini-tag {
+  background: var(--color-white-04);
+  color: var(--color-white-75);
+}
+
+.chip {
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+}
+
+.chip-accent {
+  background: var(--color-metal-soft);
+  color: var(--color-accent-secondary);
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem;
+  border-radius: 0;
+  background: var(--color-white-02);
+  border: 1px solid var(--color-white-06);
+}
+
+.profile-portrait {
+  width: 58px;
+  height: 58px;
+  border-radius: 0;
+  background: linear-gradient(135deg, var(--color-accent-glow), var(--color-metal-soft));
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.profile-info strong {
+  font-size: 1.1rem;
+  color: var(--color-text);
+}
+
+.profile-info span {
+  color: var(--color-text-dim);
+  font-size: 0.68rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.music-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.music-grid span {
+  display: inline-flex;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0;
+  background: var(--color-white-03);
+  border: 1px solid var(--color-border-faint);
+  color: var(--color-text-soft);
+  font-size: 0.7rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.match-panel {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border-radius: 0;
+  background: var(--color-white-02);
+  border: 1px solid var(--color-white-06);
+}
+
+.match-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 0;
+  background: var(--color-white-02);
+  color: var(--color-text-soft);
+}
+
+.match-row strong {
+  font-size: 1rem;
+  color: var(--color-accent);
+}
+
+.event-list {
+  display: grid;
+  gap: 0.7rem;
+  margin-top: 1rem;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.85rem 0.9rem;
+  border-radius: 0;
+  border: 1px solid var(--color-border-faint);
+  background: var(--color-white-02);
+  color: var(--color-text-soft);
+  font-size: 0.72rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+
+.event-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 16px var(--color-accent-bright-glow);
+}
+
+.event-violet {
+  background: var(--color-accent-secondary);
+  box-shadow: 0 0 18px var(--color-metal-soft);
+}
+
+@media (max-width: 900px) {
+  .showcase-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .phone-one,
+  .phone-two {
+    transform: none;
+  }
+}

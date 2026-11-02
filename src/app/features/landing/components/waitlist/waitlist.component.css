@@ -1,0 +1,135 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.waitlist {
+  padding: clamp(4rem, 7vw, 7rem) 0;
+}
+
+.waitlist-shell {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(320px, 1.2fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 2.6rem);
+  border: 1px solid var(--color-industrial-line);
+  border-radius: 0;
+  background:
+    radial-gradient(circle at top left, var(--color-accent-soft), transparent 42%),
+    var(--color-surface-soft);
+}
+
+.eyebrow {
+  margin: 0 0 0.9rem;
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+
+.waitlist-copy h2 {
+  margin: 0 0 0.85rem;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.waitlist-copy p {
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.waitlist-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.field span {
+  color: var(--color-text-soft);
+  font-size: 0.72rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+}
+
+.field input {
+  width: 100%;
+  min-height: 52px;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--color-border-soft);
+  border-radius: 0;
+  background: var(--color-overlay);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.field input:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  border: 1px solid var(--color-accent);
+  border-radius: 0;
+  background: var(--color-accent);
+  color: var(--color-text-on-accent);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.submit-btn:disabled {
+  opacity: 0.8;
+  cursor: wait;
+}
+
+.submit-btn:hover:not(:disabled),
+.submit-btn:focus-visible:not(:disabled) {
+  box-shadow: var(--shadow-accent-hover);
+}
+
+.submit-btn:hover:not(:disabled),
+.submit-btn:focus-visible:not(:disabled) {
+  background: var(--color-accent-hover);
+}
+
+.submit-btn:active:not(:disabled) {
+  background: var(--color-accent-active);
+}
+
+.helper,
+.form-message {
+  margin: 0;
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+}
+
+.form-message.error {
+  color: var(--color-feedback-error);
+}
+
+.form-message.success {
+  color: var(--color-accent);
+}
+
+@media (max-width: 860px) {
+  .waitlist-shell {
+    grid-template-columns: 1fr;
+  }
+}

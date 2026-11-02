@@ -1,0 +1,61 @@
+<section class="app-showcase" id="the-experience">
+  <div class="container">
+    <div class="section-heading align-left">
+      <p class="eyebrow">A study in shared sound</p>
+      <h2>How a night might begin.</h2>
+      <p class="showcase-note">An illustrative interface study. Matching and event discovery are not live features yet.</p>
+    </div>
+
+    <div class="showcase-shell">
+      <div class="phone-frame phone-one">
+        <div class="phone-screen">
+          <div class="screen-top">
+            <span class="mini-tag">Profile</span>
+            <span class="chip">Shared signal</span>
+          </div>
+
+          <div class="profile-card">
+            <div class="profile-portrait"></div>
+            <div class="profile-info">
+              <strong>Ana</strong>
+              <span>Paris / 24</span>
+            </div>
+          </div>
+
+          <div class="music-grid">
+            <span>Electro //</span>
+            <span>Minimal</span>
+            <span>Dub techno</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="phone-frame phone-two">
+        <div class="phone-screen">
+          <div class="screen-top">
+            <span class="mini-tag">Match</span>
+            <span class="chip chip-accent">92% vibe</span>
+          </div>
+
+          <div class="match-panel">
+            <div class="match-row" *ngFor="let item of matchData">
+              <span>{{ item.label }}</span>
+              <strong>{{ item.value }}</strong>
+            </div>
+          </div>
+
+          <div class="event-list">
+            <div class="event-item">
+              <span class="event-dot"></span>
+              <span>Example event / concept</span>
+            </div>
+            <div class="event-item">
+              <span class="event-dot event-violet"></span>
+              <span>Meet in real life / concept</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

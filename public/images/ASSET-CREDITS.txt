@@ -1,0 +1,6 @@
+Hero photograph:
+"Bob Beaman Nightclub Munich 1" by Arnold Jaeger Werner
+Source: https://commons.wikimedia.org/wiki/File:Bob_Beaman_Nightclub_Munich_1.jpg
+License: CC BY 2.0 (https://creativecommons.org/licenses/by/2.0/)
+Locally stored as techno-club-crowd.jpg (960 x 640). CSS applies a subtle
+darkened, desaturated treatment and responsive cropping.

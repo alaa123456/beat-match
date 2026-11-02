@@ -1,0 +1,37 @@
+<section class="waitlist" id="waitlist">
+  <div class="container waitlist-shell">
+    <div class="waitlist-copy">
+      <p class="eyebrow">Join the first wave</p>
+      <h2>Your people are out there.</h2>
+      <p>Be part of the first generation of Beatmatch.</p>
+    </div>
+
+    <form class="waitlist-form" [formGroup]="waitlistForm" (ngSubmit)="onSubmit()" novalidate>
+      <label class="field">
+        <span>Email</span>
+        <input type="email" formControlName="email" placeholder="you@nightmail.com" autocomplete="email" />
+      </label>
+
+      <label class="field">
+        <span>City</span>
+        <input type="text" formControlName="city" placeholder="Paris" autocomplete="address-level2" />
+      </label>
+
+      <button class="submit-btn" type="submit" [disabled]="isSubmitting">
+        {{ isSubmitting ? 'Submitting...' : 'Get early access' }}
+      </button>
+
+      <p class="helper">No spam. Just good frequencies.</p>
+
+      @if (submissionError) {
+        <p class="form-message error" role="alert">{{ submissionError }}</p>
+      }
+
+      @if (submissionSuccess) {
+        <p class="form-message success" role="status">
+          You're on the list. Keep an eye on your inbox for the first wave of access.
+        </p>
+      }
+    </form>
+  </div>
+</section>

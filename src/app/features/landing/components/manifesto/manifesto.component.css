@@ -1,0 +1,50 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+.manifesto {
+  padding: clamp(4.5rem, 9vw, 10rem) 0;
+  background:
+    linear-gradient(90deg, var(--color-surface-haze-strong), transparent 72%);
+}
+
+.manifesto-shell {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+
+.manifesto-shell h2 {
+  margin: 0;
+  max-width: 1100px;
+  font-size: clamp(2.3rem, 6vw, 6rem);
+  line-height: 0.92;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.manifesto-shell h2::before {
+  display: block;
+  width: min(100%, 8rem);
+  height: 3px;
+  margin-bottom: clamp(1.5rem, 4vw, 3rem);
+  background: var(--color-accent);
+  content: '';
+}
+
+.manifesto-copy {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  line-height: 1.7;
+  color: var(--color-text-soft);
+}

@@ -1,0 +1,21 @@
+<section class="features" id="features">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">What we listen for</p>
+      <h2>Four signals. One shared night.</h2>
+    </div>
+
+    <div class="features-grid">
+      @for (feature of features; track feature.title; let index = $index) {
+        <article class="feature-card accent-{{ feature.accent }}">
+          <span class="feature-index">0{{ index + 1 }} / FIELD NOTE</span>
+          <div class="feature-copy">
+            <h3>{{ feature.title }}</h3>
+            <p>{{ feature.description }}</p>
+          </div>
+          <span class="feature-mark" aria-hidden="true">↗</span>
+        </article>
+      }
+    </div>
+  </div>
+</section>
